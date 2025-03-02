@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FreeBussProject</title>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.js "
+      type="text/javascript"
+    ></script>
+    <script src="FreeBussScript.js"></script>
+    <style>
+      #Buss {
+        padding-left: 50px;
+        padding-top: 30px;
+      }
+      #FreeBuss {
+        background-color: white;
+      }
+      #align {
+        display: flex;
+        flex-direction: row;
+      }
+      #checkk {
+        padding-left: 50px;
+        padding-top: 30px;
+        text-align: justify;
+      }
+      #checkk input {
+        margin-bottom: 30px;
+      }
+      h3 {
+        background-color: black;
+        color: white;
+        height: 40px;
+        padding-top: 15px;
+      }
+      button {
+        border-radius: 10px;
+        background-color: lightblue;
+        cursor: pointer;
+        font-family: "Courier New", Courier, monospace;
+        border: none;
+        width: 90px;
+        height: 25px;
+      }
+      label,
+      input {
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body id="FreeBuss">
+    <h3>Old Age Free Buss Pass</h3>
+    <div id="align">
+      <div id="Buss">
+        <img
+          src="C:\Users\Venkatesh\Documents\Ramesh\images\FreeBuss.jpg"
+          alt="OldAgeFreeImageBuss"
+        />
+      </div>
+      <div id="checkk">
+        <input type="checkbox" id="Seat" />
+        <label for="Seat">Is Seat Available? </label><br />
+        <input type="checkbox" id="age" />
+        <label for="age">Is Your age above 50? </label><br />
+        <input type="checkbox" id="adhar" />
+        <label for="adhar">Do you have Adhar Card?</label><br />
+        <button onclick="checkEligible();">Check</button><br /><br />
+        <label style="display: none" id="check"></label>
+      </div>
+    </div>
+  </body>
+</html>

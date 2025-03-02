@@ -47,4 +47,5 @@ function clearAll() {
   $("#height").val("");
   $("#weight").val("");
   $("#result").attr("style", "display:none");
+  console.log("Hello world");
 }

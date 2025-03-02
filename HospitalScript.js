@@ -48,4 +48,5 @@ function clearAll() {
   $("#weight").val("");
   $("#result").attr("style", "display:none");
   console.log("Hello world");
+  console.log("Namaste");
 }

@@ -1,0 +1,93 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HospitalProject</title>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.js "
+      type="text/javascript"
+    ></script>
+    <script src="HospitalScript.js"></script>
+    <!-- <link href="jqtransform.css" rel="stylesheet" type="text/css" />
+    <script src="jquery.jqtransform.js"></script> -->
+    <style>
+      #hospit {
+        float: right;
+        padding-right: 60px;
+      }
+      #user-inputs {
+        display: flex;
+        flex-direction: column;
+        padding-left: 60px;
+        padding-top: 60px;
+      }
+      input {
+        width: 35em;
+        margin-bottom: 2px;
+        padding-left: 10px;
+        height: 30px;
+      }
+    </style>
+  </head>
+  <body style="background-color: lightblue">
+    <h3 style="color: black; text-align: center">Check Your'e BMI</h3>
+    <div>
+      <div id="hospit">
+        <img
+          src="C:\Users\Venkatesh\Documents\Ramesh\images\Hospital.jpg"
+          alt="Hospital"
+        />
+      </div>
+      <div id="user-inputs">
+        <input
+          type="text"
+          name="Username"
+          id="Username"
+          placeholder="Enter your'e Name"
+          autofocus="autofocus"
+          required
+        />
+        <input
+          type="number"
+          name="weight"
+          id="weight"
+          placeholder="Enter your'e weight in (KG'S)"
+          required
+        />
+        <input
+          type="number"
+          name="height"
+          id="height"
+          placeholder="Enter your'e Height in (CM)"
+          required
+        />
+        <input
+          type="submit"
+          name="Calculate"
+          id="submit"
+          placeholder="Calculate"
+          style="
+            background-color: black;
+            color: white;
+            border: none;
+            cursor: pointer;
+          "
+          onclick="venkatesh();"
+        />
+        <input
+          type="reset"
+          name="reset"
+          id="reset"
+          style="
+            background-color: orangered;
+            color: white;
+            border: none;
+            cursor: pointer;
+          "
+          onclick="clearAll();"
+        />
+        <span style="display: none" id="result"></span>
+      </div>
+    </div>
+  </body>
+</html>

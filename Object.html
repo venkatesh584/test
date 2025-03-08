@@ -1,0 +1,126 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lotarry Game</title>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.js "
+      type="text/javascript"
+    ></script>
+    <script src="ObjectScriptss.js"></script>
+    <style>
+      body {
+        background-color: aliceblue;
+      }
+      * {
+        margin: 20px;
+        padding: 0;
+      }
+      .Game {
+        background-color: white;
+        max-width: 700px;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        box-shadow: 0 0 5px 5px rgb(109, 109, 240);
+      }
+      button {
+        cursor: pointer;
+        padding: 5px;
+        background-color: green;
+        color: white;
+        border: none;
+        border-radius: 4px;
+      }
+      button:hover {
+        background-color: rgb(30, 107, 30);
+      }
+      h3 {
+        color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="Game">
+      <h3>Lotarry Game</h3>
+      <img src="LatarryNumgerPic.jpeg" alt="LotarryPic" />
+      <p id="result" style="margin-bottom: 10px; font-size: large"></p>
+      <button id="pikbtn" onclick="takeNumber()">Pick A Number</button>
+    </div>
+  </body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lotarry Game</title>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.js "
+      type="text/javascript"
+    ></script>
+    <style>
+      body {
+        background-color: aliceblue;
+      }
+      .Game {
+        background-color: white;
+        max-width: 700px;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        box-shadow: 0 0 5px 5px rgb(109, 109, 240);
+        margin-top: 70px;
+      }
+      button {
+        cursor: pointer;
+        padding: 5px;
+        background-color: green;
+        color: white;
+        border: none;
+        border-radius: 4px;
+      }
+      button:hover {
+        background-color: rgb(30, 107, 30);
+      }
+      h3 {
+        color: green;
+      }
+      .boxes {
+        background-color: yellow;
+        padding: 5px;
+        font-weight: bold;
+        font-size: 15px;
+        margin: 5px;
+        border: none;
+        border-radius: 50%;
+      }
+      .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+      .boxstyle {
+        border: 4px solid red;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="Game">
+      <h3>Lotarry Game</h3>
+      <div class="container">
+        <div class="container" id="cont"></div>
+      </div>
+      <p id="result" style="margin-bottom: 10px; font-size: large"></p>
+      <button id="pikbtn" style="cursor: pointer">Pick A Number</button>
+    </div>
+    <script src="ObjectScriptss.js"></script>
+  </body>
+</html>

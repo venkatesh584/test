@@ -110,7 +110,7 @@ let arr = [
 ];
 arr.forEach(function (value, index) {
   debugger;
-  let eliment = `<div class="contain" id="contt">
+  let eliment = `<div class="contain" id="contt${index + 1}" value="false">
         <div class="semi-container ${index + 1}">
           <span>${value.pname}-Rs ${value.price}</span>
         </div>
@@ -130,8 +130,11 @@ function addCart(e) {
   for (i = 0; i <= i; i++) {
     if (value == i) {
       finalvau = $(`.${value}`).text().trim();
-      fbool = arr[i - 1].value = true;
-      if (fbool) {
+      // fbool = arr[i - 1].value = true;
+      var res = document
+        .getElementById(`contt${arr[i - 1].id}`)
+        .getAttribute("value");
+      if (res == "false") {
         let fcount = arr[i - 1].price;
         count += fcount;
         document.getElementById(
@@ -140,19 +143,21 @@ function addCart(e) {
         let eliment = `<div class="contain" id="contt${
           arr[i - 1].id
         }" value="${bool}">
-          <div class="semi-container">
-            <span>${finalvau}</span>
-          </div>
-          <div class="addcart">
-            <button onclick="removeCart(event)" id="${
-              arr[i - 1].id
-            }">Remove</button>
-          </div>
-          </div>`;
+            <div class="semi-container">
+              <span>${finalvau}</span>
+            </div>
+            <div class="addcart">
+              <button onclick="removeCart(event)" id="${
+                arr[i - 1].id
+              }">Remove</button>
+            </div>
+            </div>`;
         document
           .getElementById("cartt")
           .insertAdjacentHTML("beforeend", eliment);
         break;
+      } else {
+        alert("item is already added!!");
       }
     }
   }
@@ -177,5 +182,13 @@ function reSet() {
   bool = false;
   document.getElementById("Price").innerHTML = `Total Amount: Rs. ${count}`;
   $("#cartt").find(".contain").remove();
+}
+
+function sorting() {
+  debugger;
+  arr.sort(function (arr0, arr1) {
+    return arr0.price - arr1.price;
+  });
+  console.log(arr);
 }
 // Shoppig Code start END
